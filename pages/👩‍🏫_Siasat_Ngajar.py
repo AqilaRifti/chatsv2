@@ -9,6 +9,7 @@ api_key = "noHEU8RG9UdiN5kMHxmyKjxvOb6kaURXwy8qxbcmzKaYHuCn"
 
 
 st.set_page_config(page_title="Milarian Jawaban", page_icon="👩‍🏫")
+st.set_page_config(initial_sidebar_state="collapsed")
 
 def answer_generator(messages: str):
     print(messages)

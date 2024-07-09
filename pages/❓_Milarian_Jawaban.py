@@ -10,6 +10,7 @@ from langchain_core.embeddings import Embeddings
 from langchain.vectorstores.chroma import Chroma
 from chromadb.config import Settings
 import os
+
 MAX_EMBEDDING_RESULT = 5
 
 AI21_EMBEDDING_DATABASE_PATH = "chromadb"
@@ -69,6 +70,7 @@ api_key = "noHEU8RG9UdiN5kMHxmyKjxvOb6kaURXwy8qxbcmzKaYHuCn"
 
 
 st.set_page_config(page_title="Milarian Jawaban", page_icon="❓")
+st.set_page_config(initial_sidebar_state="collapsed")
 
 def answer_generator(messages: List[str]):
     modified_message = {"role": "user", "content": generate_prompt_indonesia(messages[-1]["content"])}
