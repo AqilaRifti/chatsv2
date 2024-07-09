@@ -5,6 +5,7 @@ sys.path.append("")
 st.set_page_config(
     page_title="Petunjuk",
     page_icon="🧭",
+    initial_sidebar_state="collapsed"
 )
 
 st.write("# Selamat Datang! 👋")

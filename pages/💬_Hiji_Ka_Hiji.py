@@ -6,8 +6,7 @@ import itertools
 
 model_id = "7qk9kpe3"
 api_key = "noHEU8RG9UdiN5kMHxmyKjxvOb6kaURXwy8qxbcmzKaYHuCn"
-st.set_page_config(page_title="Hiji Ka Hiji", page_icon="💬")
-st.set_page_config(initial_sidebar_state="collapsed")
+st.set_page_config(page_title="Hiji Ka Hiji", page_icon="💬", initial_sidebar_state="collapsed")
 
 def vertex_generator(messages: str):
     url = "https://api.fireworks.ai/inference/v1/chat/completions"
